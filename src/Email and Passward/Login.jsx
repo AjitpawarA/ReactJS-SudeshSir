@@ -9,9 +9,6 @@ import { AuthContext } from "./Context/AuthContext";
 function Login() {
   const [email, setemail] = useState("");
   const [passward, setpassward] = useState("");
-
-  const [vstate, setvstate]=useState(false);
-
   const authcontext= useContext(AuthContext)
   const navigate = useNavigate();
 
@@ -25,15 +22,15 @@ function Login() {
       );
       const user = usercredentials.user;
       console.log(user);
-      setvstate(true);
-      navigate("/privatelogin/profile");
+      authcontext.setvstate(true);
+      navigate("/privatelogin/profile")
     } catch {
       alert("wrong passward")
-      setvstate(false);
+      authcontext.setvstate(false);
     }
     
   }
-  console.log(vstate);
+  console.log(authcontext.vstate);
 
   return (
     <div

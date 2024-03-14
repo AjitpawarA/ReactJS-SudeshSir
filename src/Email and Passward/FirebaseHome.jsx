@@ -3,7 +3,6 @@ import Login from './Login'
 import Signup from './Signup'
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom'
 import Profile from './Profile'
-import New from './New'
 import Privatelogin from './Privatelogin'
 
 function FirebaseHome() {
@@ -18,7 +17,6 @@ function FirebaseHome() {
           <Route path='profile' element={<Profile/>}/>
         </Route>
         </Routes>
-        <New/>
         </BrowserRouter>
         
     </div>

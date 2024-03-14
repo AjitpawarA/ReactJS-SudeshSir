@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import JsonServer from './JsonServer'
 import CreateUser from './CreateUser'
+import Edit from './Edit'
 
 function JsonHome() {
   return (
@@ -10,6 +11,7 @@ function JsonHome() {
             <Routes>
                 <Route path={"/"} element={<JsonServer/>}/>
                 <Route path={"/create"} element={<CreateUser/>}/>
+                <Route path={"/edit/:id"} element={<Edit/>}></Route>
             </Routes>
         </BrowserRouter>
     </div>

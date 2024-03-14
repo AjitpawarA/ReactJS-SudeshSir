@@ -1,17 +1,10 @@
-import React, { useContext } from 'react'
-import { CartContext } from './Context/CartContext'
+import React, { useContext } from "react";
+import { CartContext } from "./Context/CartContext";
 
 function Cart() {
+  const cartdata = useContext(CartContext);
 
-    const cartdata= useContext(CartContext);
-
-  return (
-    <div>
-       {cartdata && cartdata.item.map((e) => (
-          <li>{e.name}</li>
-        ))}
-    </div>
-  )
+  return <div>{cartdata && cartdata.item.map((e) => <li>{e.name}</li>)}</div>;
 }
 
-export default Cart
+export default Cart;

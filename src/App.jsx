@@ -1,12 +1,16 @@
 
+import { Form } from 'react-router-dom'
 import Weatherapp from './APIS/Weatherapp'
 import './App.css'
 import HomeContext from './ContextAPI/HomeContext'
+import AuthProvider from './Email and Passward/Context/AuthContext'
 import FirebaseHome from './Email and Passward/FirebaseHome'
+import Email from './EmailLive/Email'
 import HarishMain from './HarishPortfolio/HarishMain'
 import JsonHome from './Json Server/JsonHome'
 import JsonServer from './Json Server/JsonServer'
 import Musicapp from './MusicApp/Musicapp'
+import NewApp from './New/NewApp'
 import Pixabay from './Pixabay/Pixabay'
 import Card from './ProductCard/Card'
 import Usestate from './Props/Hooks/Usestate/Usestate'
@@ -21,6 +25,7 @@ import Useeff from './Useeffect/Useeff'
 import Usememo from './Usememo/Usememo'
 import VideoCall from './VideoCallAPP/VideoCall'
 import Video from './VideoPlayPause/Video'
+import Formm from './FormicFormValdation/Formm'
 
 function App() {
 
@@ -120,7 +125,9 @@ function App() {
 
     // FIREBASE
     // <>
-    // <FirebaseHome/>
+    // <AuthProvider>
+    //  <FirebaseHome/>
+    // </AuthProvider>
     // </>
 
     //CONTEXT API
@@ -138,8 +145,30 @@ function App() {
 
     //JSON SERVER
     // <>
-    <JsonHome/>
+    // <JsonHome/>
     // </>
+
+    //Email Project
+    // <>
+    // {/* <Email/> */}
+    // </>
+
+
+
+    // <HomeCArt/>
+
+
+
+    // <NewApp/>
+
+
+
+    //Formic Form validation 
+    <>
+    <Formm/>
+    </>
+
+
   )
 }
 

@@ -3,8 +3,8 @@ import { Outlet } from 'react-router-dom'
 
 function Profile() {
   return (
-    <div>Profile
-      <Outlet/>
+    <div style={{fontSize:"50px"}}>
+      Profile
     </div>
   )
 }

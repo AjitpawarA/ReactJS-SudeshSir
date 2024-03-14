@@ -1,18 +1,16 @@
 import React from 'react'
 import { createContext, useContext } from 'react'
 import { useState } from 'react';
-import New from '../New';
 
 
 export const AuthContext = createContext();
 
-function AuthProvider() {
+function AuthProvider(props) {
 
-  const [vstate, setvstate]=useState(true);
-  console.log(vstate);
+  const [vstate, setvstate]=useState(false);
   return (
     <AuthContext.Provider value={{vstate, setvstate}}>
-        <FirebaseHome/>
+        {props.children}
     </AuthContext.Provider>
   )
 }
