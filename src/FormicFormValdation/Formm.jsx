@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import { userSchema } from './Schemas';
-
+import "./formcss.css"
 const Formm = () => {
     const initialValues = { name: "", email: "", password: "", cpassword: "" };
 

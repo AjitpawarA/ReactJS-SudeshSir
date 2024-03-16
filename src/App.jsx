@@ -26,6 +26,8 @@ import Usememo from './Usememo/Usememo'
 import VideoCall from './VideoCallAPP/VideoCall'
 import Video from './VideoPlayPause/Video'
 import Formm from './FormicFormValdation/Formm'
+import List from './List Rendering/List'
+import CondtionRender from './Condition Rendering/CondtionRender'
 
 function App() {
 
@@ -164,11 +166,20 @@ function App() {
 
 
     //Formic Form validation 
+    // <>
+    // <Formm/>
+    // </>
+
+
+    // List rendering
+    // <>
+    // <List/>
+    // </>
+
+    //Cndition Rendering
     <>
-    <Formm/>
+    <CondtionRender/>
     </>
-
-
   )
 }
 
